@@ -1,0 +1,14 @@
+# Editerbar SQL-modell
+
+[www.qtcentre.org/threads/44967-QSqlQueryModel-edit-table-amp-direct-query-to-the-database](https://www.qtcentre.org/threads/44967-QSqlQueryModel-edit-table-amp-direct-query-to-the-database)
+[forum.qt.io/topic/34561/make-qsqlquerymodel-editable-setdata](https://forum.qt.io/topic/34561/make-qsqlquerymodel-editable-setdata)
+[github.com/pyside/Examples/blob/master/examples/sql/querymodel.py](https://github.com/pyside/Examples/blob/master/examples/sql/querymodel.py)
+
+När man ska göra en editerbar SQL Query modell så måste man först implementera en setData funktion som hanterar uppdateringen av databasen, och uppdatera flags funktionen för att den ska 
+returnera en flagga som meddelar att modellen är editerbar (QtCore.Qt.ItemIsEditable)
+
+Funktionen flags utgår ifrån vilken roll som användaren har och returnerar sen flaggan som återspeglar rollens befogenheter (ex edit). Enklast är att låta funktionen returnera "Editerbar" 
+för alla roller, men mer korrekt är att man gör det för rollen edit.
+
+I funktionen setData så behöver man också skicka signalen dataChanged för att relaterade objekt så som tabellkontroller och listor ska uppdateras.
+
