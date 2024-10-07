@@ -1,0 +1,17 @@
+|Kommando  |Beskrivning                                                                                                    |
+|----------|---------------------------------------------------------------------------------------------------------------|
+| hostname | Returnerar namnet på den dator man är inloggad på                                                             |
+| whoami   | Returnerar aktuellt användarnamn                                                                              |
+| id       | Returnerar **user**, **group id** och alla de grupper där användaren ingår                                    | 
+| uname    | Returnerar namnet på **kernal** men kan returnera annan systeminformation i kombination med en växel (switch) |
+
+# uname
+
+|Växel              |Beskrivning                                                                                                    |
+|-------------------|---------------------------------------------------------------------------------------------------------------|
+| -a, --all         | Returnerar all information som listas i den här tabellen utom processor och hårdvaruplattform om den är okänd |
+| -s, --kernal-name | Returnerarar namnet på **kernal** (samma resultat som om man kör kommandot utan växel)                        |
+| id       | Returnerar **user**, **group id** och alla de grupper där användaren ingår                                    | 
+| uname    | Returnerar namnet på **kernal** men kan returnera annan systeminformation i kombination med en växel (switch) |
+
+
