@@ -1,0 +1,11 @@
+Genom att använda PowerShell så kan man få fram information om ett windows system.
+PowerShell startas genom att man sökger kommandot PowerShell i sökrutan.
+
+Från PowerShell-prompten kan man sedan använda kommandot Get-WmiObject för att hämta ut ett objekt ur .net systemet
+och presentera innehållet i objektet på skärmen.
+Några vanliga objekt att kolla på är:
+- win32_OperatingSystem som innehåller information om operativsystemet (ex Version och Buildnumber)
+- win32_Process som innehåller alla pågående processer
+- win32_Service som innehåller alla tjänster som är aktiva
+- win32_Bios som visar information om BIOS
+
