@@ -4,6 +4,10 @@
 | whoami   | Returnerar aktuellt användarnamn                                                                              |
 | id       | Returnerar **user**, **group id** och alla de grupper där användaren ingår                                    | 
 | uname    | Returnerar namnet på **kernal** men kan returnera annan systeminformation i kombination med en växel (switch) |
+| more     | Delar upp en ström av information i skärmsidor.                                                               |
+| less     | Delar upp en ström av information i skärmsidor.                                                               |
+| head     | Returnerar början av en fil                                                                                   |
+
 
 # uname
 
