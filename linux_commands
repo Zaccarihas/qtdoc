@@ -7,6 +7,8 @@
 | more     | Delar upp en ström av information i skärmsidor.                                                               |
 | less     | Delar upp en ström av information i skärmsidor.                                                               |
 | head     | Returnerar början av en fil                                                                                   |
+| awk      | awk är ett scriptspråk för att manipulera text                                                                |
+
 
 
 # uname
